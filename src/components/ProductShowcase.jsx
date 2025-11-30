@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ image, name, price }) => (
+const ProductCard = ({ image, name }) => (
     <div style={{ marginBottom: '2rem' }}>
         <div style={{
             height: '300px',
@@ -18,24 +18,21 @@ const ProductCard = ({ image, name, price }) => (
                 onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
             />
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div>
-                <h3 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>{name}</h3>
-                <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Soy + Coconut + Beeswax</p>
-            </div>
-            <span style={{ fontWeight: '600' }}>{price}</span>
+        <div>
+            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>{name}</h3>
+            <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Soy + Coconut + Beeswax</p>
         </div>
     </div>
 );
 
 const ProductShowcase = () => {
     const products = [
-        { name: "Serene Green", price: "₹899", image: "/images/product-1.jpg" },
-        { name: "Blush Pink", price: "₹899", image: "/images/product-2.jpg" },
-        { name: "Sky Calm", price: "₹899", image: "/images/product-3.jpg" },
-        { name: "Lavender Dream", price: "₹899", image: "/images/product-4.jpg" },
-        { name: "Golden Hour", price: "₹899", image: "/images/product-5.jpg" },
-        { name: "Ocean Breeze", price: "₹899", image: "/images/product-6.jpg" },
+        { name: "Serene Green", image: "/images/product-1.jpg" },
+        { name: "Blush Pink", image: "/images/product-2.jpg" },
+        { name: "Sky Calm", image: "/images/product-3.jpg" },
+        { name: "Lavender Dream", image: "/images/product-4.jpg" },
+        { name: "Golden Hour", image: "/images/product-5.jpg" },
+        { name: "Ocean Breeze", image: "/images/product-6.jpg" },
     ];
 
     return (
