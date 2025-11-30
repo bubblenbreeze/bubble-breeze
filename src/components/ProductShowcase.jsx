@@ -20,7 +20,7 @@ const ProductCard = ({ image, name }) => (
         </div>
         <div>
             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>{name}</h3>
-            <p style={{ color: 'var(--color-text-light)', fontSize: '0.9rem' }}>Soy + Coconut + Beeswax</p>
+
         </div>
     </div>
 );
